@@ -1,0 +1,86 @@
+// compress: true
+
+@import "vars.less";
+
+html {
+    font-size: 15px;
+}
+
+@font-face {
+    font-family: 'Gotham Pro Light';
+    src: url('../fonts/GothamPro-Light.eot');
+    src: url('../fonts/GothamPro-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/GothamPro-Light.woff') format('woff'),
+    url('../fonts/GothamPro-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Pro Medium';
+    src: url('../fonts/GothamPro-Medium.eot');
+    src: url('../fonts/GothamPro-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/GothamPro-Medium.woff') format('woff'),
+    url('../fonts/GothamPro-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Pro Bold';
+    src: url('../fonts/GothamPro-Bold.eot');
+    src: url('../fonts/GothamPro-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/GothamPro-Bold.woff') format('woff'),
+    url('../fonts/GothamPro-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    
+    margin: 0;
+    font-family: 'Gotham Pro', 'sans-serif';
+    font-size: 1rem;
+
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
+.app {display: none;}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+// BLOCKS
+@import "blocks/forJS.less";
+@import "blocks/preload.less";
+@import "blocks/header.less";
+@import "blocks/section0.less";
+@import "blocks/something.less";
+@import "blocks/section1.less";
+@import "blocks/serversSlider.less";
+@import "blocks/section2.less";
+@import "blocks/section3.less";
+@import "blocks/footer.less";
+
+@media (max-width: 768px) {
+
+    #fullpage {display: none}
+    .loader-bg {display: none}
+    .app {display: block}
+
+    @import "blocks/mobile/header";
+    @import "blocks/mobile/hamburger_menu.less";
+    @import "blocks/mobile/intro";
+    @import "blocks/mobile/guid";
+    @import "blocks/mobile/servers";
+    @import "blocks/mobile/news";
+    @import "blocks/mobile/contacts";
+    @import "blocks/mobile/footer";
+
+}

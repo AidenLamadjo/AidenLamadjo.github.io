@@ -1,0 +1,218 @@
+// main: ../style.less
+
+.contacts__inner {
+
+    display: flex;
+    margin-left: -2rem;
+
+}
+
+.contact__col {
+
+    width: 33.3333333%;
+    padding: 0 1rem;
+
+}
+
+.contact {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 385px;
+    height: 481px;
+
+    &--first {
+
+        background: url(../images/card.png) no-repeat top;
+
+    }
+
+    &--second {
+
+        background: url(../images/card-second.png) no-repeat top;
+
+    }
+
+    &--third {
+
+        background: url(../images/card-thirty.png) no-repeat top;
+
+    }
+
+
+}
+
+.contact__header {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.contact__deccircle {
+
+    position: relative;
+    top: 70px;
+
+    &::before {
+
+        content: attr(data-count);
+        position: absolute;
+        top: 4px;
+        right: -29px;
+        padding: 15px;
+        border-radius: 26px;
+        font: 500 16px Geometria;
+        color: #fff;
+
+    }
+
+    &--first::before {
+
+        background: linear-gradient(0deg,#6322d7,#d774fa);
+
+    }
+
+    &--second::before {
+
+        background: linear-gradient(0deg,#0B60E0,#19B9FA);
+
+    }
+
+    &--third::before {
+
+        background: linear-gradient(0deg,#84A732,#BBD75E);
+
+    }
+    
+}
+
+.contact__info {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+
+}
+
+.contact__firsttitle {
+
+    font: 800 18px Gotham Pro;
+    color: #9d47ec;
+    text-transform: uppercase;
+
+    &--first {
+        color: #9d47ec;
+    }
+
+    &--second {
+        color: #0c68e2;
+    }
+
+    &--third {
+        color: #83b729;
+    }
+
+}
+    
+.contact__secondtitle {
+
+    font: light 14px Gotham Pro;
+    color: #29313a;
+    text-transform: uppercase;
+
+}
+
+.contact__maintitle {
+
+    position: absolute;
+    bottom: 45px;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    text-align: center;
+    font: 800 18px Geometria;
+    text-transform: uppercase;
+    color: #29313a;
+
+}
+
+.contact__footer {
+
+    position: absolute;
+    bottom: -25px;
+
+}
+
+.contact__btn {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 25px;
+    font: 500 16px Gotham Pro;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 1rem;
+    padding: 15px 40px;
+
+    &::before {
+
+        content: " ";
+        position: absolute;
+        top: -6px;
+        left: -6px;
+        width: calc(100% + 12px);
+        height: calc(100% + 12px);
+        border: 1px solid #8b42ce;
+        border-radius: 32px;
+
+    }
+
+    &--first {
+
+        background: linear-gradient(0deg,#8b42ce,#c377f5);
+
+        &::before {
+
+            border: 1px solid #8b42ce;
+
+        }
+
+    }
+
+    &--second {
+
+        background: linear-gradient(0deg,#0e71ca,#30abf1);
+
+        &::before {
+
+            border: 1px solid #0e71ca;
+
+        }
+
+    }
+
+    &--third {
+
+        background: linear-gradient(0deg,#84a732,#bbd75e);
+
+        &::before {
+
+            border: 1px solid #84a732;
+
+        }
+
+    }
+
+
+}
+

@@ -1,0 +1,208 @@
+// main: ../style.less
+
+.guid {
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+
+}
+
+.guid__col {
+
+    flex-basis: 33.33333333%;
+    padding: 0 20px;
+
+}
+
+.guid__inner {
+
+    position: relative;
+    width: 100%;
+    height: 252px;
+    border-radius: 20px;
+    padding: 25px 20px;
+
+    &--1 {
+
+        background: linear-gradient(180deg,#00c1fc,#01aaef);
+
+        &::before {
+
+            content: "";
+            display: block;
+            position: absolute;
+            top: 30px;
+            left: 35px;
+            width: 143px;
+            height: 138px;
+            background: url(../images/icons/atom.png);
+        }
+
+        &::after {
+
+            content: " ";
+            display: block;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 122px;
+            height: 173px;
+            background: url(../images/icons/gtav.png);
+        }
+
+        
+    }
+
+    &--2 {
+
+        background: linear-gradient(180deg,#956af2,#713cee);
+        &::before {
+
+            content: "";
+            display: block;
+            position: absolute;
+            top: 30px;
+            left: 35px;
+            width: 143px;
+            height: 138px;
+            background: url(../images/icons/atom.png);
+        }
+
+        &::after {
+
+            content: " ";
+            display: block;
+            position: absolute;
+            top: 25px;
+            right: 20px;
+            width: 170px;
+            height: 54px;
+            background: url(../images/icons/card-rage.png);
+
+        }
+
+    }
+
+    &--3 {
+
+        background: linear-gradient(180deg,#00d77d,#00aa57);
+
+
+        &::before {
+
+            content: "";
+            display: block;
+            position: absolute;
+            top: 30px;
+            left: 35px;
+            width: 143px;
+            height: 138px;
+            background: url(../images/icons/atom.png);
+        }
+
+        &::after {
+
+            content: " ";
+            display: block;
+            position: absolute;
+            top: 25px;
+            right: 20px;
+            width: 149px;
+            height: 162px;
+            background: url(../images/icons/card-replace.png);
+
+        }
+
+    }
+
+}
+
+.guid__header {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.guid__step {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font: 700 26px Geometria;
+    color: #fff;
+    letter-spacing: .01em;
+    width: 50px;
+    height: 50px;
+    background: url(../images/icons/card-step.png) no-repeat top;
+    padding: 0 0 4px 4px;
+
+}
+
+.guid__title {
+
+    font: 700 20px Gotham Pro;
+    color: #fff;
+    margin-left: 0.5rem;
+
+}
+
+.guid__content {
+
+    font: 700 16px Gotham Pro;
+    color: #fff;
+    margin-top: 0.5rem;
+    max-width: 200px;
+
+}
+
+.guid__btn {
+
+    position: relative;
+    border: 2px solid #e7eefe;
+    padding: 7.5px 26px;
+    border-radius: 17.5px;
+    font: 300 16px Geometria;
+    color: #fff;
+    letter-spacing: .01em;
+    text-decoration: none;
+    z-index: 10000;
+
+    &:hover {
+
+        background: linear-gradient(180deg,#0b60e0,#19b9fa);
+        color: #fff;
+
+    }
+
+}
+
+.guid__footer {
+
+    margin-top: 35px;
+
+    &--2 {
+
+        margin-top: 55px;
+
+    }
+
+}
+
+.footer__decbox {
+
+    content: " ";
+    display: block;
+    position: absolute;
+    right: 20px;
+    bottom: 60px;
+    width: 49px;
+    height: 57px;
+    background: url(../images/icons/box-small.png);
+
+}

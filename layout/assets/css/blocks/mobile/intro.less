@@ -1,0 +1,70 @@
+// main: ../../style.less
+
+
+.intro__inner {
+
+    display: flex;
+    flex-direction: column;
+    z-index: 1000000000;
+
+}
+
+.intro__title {
+
+    font: 700 30px Gotham Pro;
+    color: #fff;
+ 
+}
+
+.intro {
+
+    position: relative;
+    width: 100%;
+
+}
+
+.intro__logo-img {
+
+    width: 100%;
+    max-width: 763px;
+    margin: 15px 0;
+
+}
+
+.intro__btn-link {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 15px 51px; 
+    border-radius: 25px;
+    background: linear-gradient(to bottom right,#19b9fa,#0b60e0);
+    font: 500 16px Gotham Pro;
+    text-transform: uppercase;
+    color: #fff;
+    background-clip: padding-box;
+    width: 89%;
+    text-decoration: none;
+    margin-top: 48px;
+
+    &::before {
+
+        content: " ";
+        position: absolute;
+        top: -6px;
+        left: -6px;
+        width: calc(100% + 12px);
+        height: calc(100% + 12px);
+        border: 1px solid #2baaf4;
+        border-radius: 32px;
+    }
+
+}
+
+.intro__info {
+
+    justify-content: start;
+    margin-top: 48px;
+
+}

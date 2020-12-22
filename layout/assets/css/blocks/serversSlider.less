@@ -1,0 +1,228 @@
+// main: ../style.less
+
+.slider {
+
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px;
+
+}
+
+.slider__wrapper {
+    display: flex;
+    transition: transform 0.6s ease;
+}
+
+.slider__item {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    height: 202px;
+
+    padding: 29px 18px;
+    border-radius: 10px;
+
+
+    &--Downtown {
+
+        background: url(../../assets/images/downtown.png) center top no-repeat;
+
+    }
+
+    &--StrawBerry {
+
+        background: url(../../assets/images/strawberry.png) center top no-repeat;
+
+    }
+
+    &--VineWood {
+
+        background: url(../../assets/images/vinewood.png) center top no-repeat;
+
+    }
+
+    &--BlackBerry {
+
+        background: url(../../assets/images/blackberry-bg.png) center top no-repeat;
+
+    }
+
+    &--InSquad {
+
+        background: url(../../assets/images/insquad.png) center top no-repeat;
+
+
+    }
+
+    &--Sunrise {
+
+        background: url(../../assets/images/sunrise.png) center top no-repeat;
+
+    }
+
+    &--Rainbow {
+
+        background: url(../../assets/images/rainbow-bg.png) center top no-repeat;
+
+    }
+
+    &--Richman {
+
+        background: url(../../assets/images/richman-bg.png) center top no-repeat;
+
+    }
+
+    &--Eclipse {
+
+        background: url(../../assets/images/eclipse-bg.png) center top no-repeat;
+
+    }
+
+    &--LaMesa {
+
+        background: url(../../assets/images/lamesa-bg.png) center top no-repeat;
+
+    }
+
+}
+.slider__nav {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    width: 100%;
+
+}
+.slider__control {  
+
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    opacity: 0.5;
+
+
+}
+
+
+
+.slider__control:hover,
+.slider__control:focus {
+    color: #fff;
+    text-decoration: none;
+    outline: 0;
+    opacity: .9;
+}
+
+.slider__control_left {
+    left: 0;
+    margin-right: 10px;
+}
+
+.slider__control_right {
+    right: 0;
+}
+
+.slider__control::before {
+    content: '';
+    display: inline-block;
+    height: 13px;
+    width: 24px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+}
+
+
+
+.slider__control_left::before {
+    background-image: url("../images/icons/pag-arrow.png");
+}
+
+.slider__control_right::before {
+    background-image: url("../images/icons/pag-arrow 3.png");
+}
+
+.server__header {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100px;
+
+}
+
+.server__info {
+
+    margin-left: 1rem;
+
+}
+
+.server__name {
+
+    font: 700 24px Gotham Pro;
+    color: #eeba2c;
+    margin-bottom: .5rem;
+
+}
+
+.server__online {
+    
+    font: normal 14px Geometria;
+    color: #fff;
+
+}
+
+.connect__online {
+
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #1c2534;
+    border-radius: 4.5px;
+
+}
+
+.server__connect {
+
+    margin-top: 20px;
+    width: 100%;
+    position: relative;
+
+}
+
+.online__fill {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 10px;
+    background: linear-gradient(90deg,#ffde45,#fc5e1c);
+    border-radius: 4.5px;
+
+}
+
+.connect__button {
+
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 8px;
+    background: linear-gradient(180deg,#19b9fa,#0b60e0);
+    border-radius: 17.5px;
+    font: normal 14px Geometria;
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.title {
+
+    margin-bottom: 75px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+
+}
