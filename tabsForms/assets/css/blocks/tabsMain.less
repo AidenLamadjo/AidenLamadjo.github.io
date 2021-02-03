@@ -1,0 +1,100 @@
+// main: ../tabsForms.less
+
+ 
+.tabs {
+    width: 100%;
+    max-width: 965px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+ 
+ /* Стили для списка вкладок */
+.tab-header {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+ 
+ /* Стили для вкладки */
+.tab-header__item {
+    padding: 10px 36px 12px 19px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 10px 10px 0px 0px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.03333rem;
+    line-height: 1.5333rem;
+    height: 50px;
+    box-shadow: 5px 0px 9px rgba(41, 137, 152, 0.39);
+    text-transform: uppercase;
+    &--first {
+
+        background: #6DD4E4;
+        z-index: 3;
+
+    }
+
+    &--second {
+
+        background: #3FC8DE;
+        margin-left: -20px;
+        z-index: 1;
+        padding-left: 46px;
+
+    }
+
+    &--third {
+
+        background: #22A9BF;
+        margin-left: -20px;
+        z-index: 0;
+        padding-left: 46px;
+
+    }
+
+    img {
+
+        margin-right: 20px;
+
+    }
+
+}
+ 
+ /* Стили для активной вкладки */
+.tab-header__item.active {
+    position: relative;
+    background: #F4F6FB;
+    color:@dark;
+
+
+}
+ 
+ /* Стиль для списка контейнеров с содержимым вкладок */
+.tab-content {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+ 
+ /* Стили для контейнера с содержимым вкладки */
+.tab-content__item {
+    display: none;
+    padding: 40px 70px 45px 40px;
+    background: #F4F6FB;
+    border-radius: 0px 10px 10px 10px;
+}
+ 
+ /* Стили для активного контейнера вкладки */
+.tab-content__item.active {
+    display: block;
+}
+ 

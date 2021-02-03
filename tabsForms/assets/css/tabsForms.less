@@ -1,0 +1,41 @@
+// compress: true
+
+@import "vars";
+
+html {
+    font-size: 16px;
+}
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    background: #142348;
+
+    &.no-scroll {
+
+        overflow: hidden;
+
+    }
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/* BOOTSTRAP */
+@import "bootstrap/css/bootstrap-grid.css";
+@import "bootstrap/css/bootstrap-reboot.css";
+@import "bootstrap/css/bootstrap-utilities.css";
+@import "bootstrap/css/bootstrap.css";
+
+
+/* BLOCKS */
+@import "blocks/tabsMain.less";
+@import "blocks/air.less";
+@import "blocks/datepicker.less";

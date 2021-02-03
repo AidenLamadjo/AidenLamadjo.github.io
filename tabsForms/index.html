@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/tabsForms.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+        <!-- Общий контейнер для табов -->
+    <div class="tabs">
+    
+        <!--  Контейнер с вкладками   -->
+        <ul class="tab-header">
+        <li class="tab-header__item tab-header__item--first js-tab-trigger reset-form-button active" data-tab="1">
+            <img src="assets/images/icons/air.svg" alt="">
+            Авиабилеты
+        </li>
+        <li class="tab-header__item tab-header__item--second js-tab-trigger reset-form-button" data-tab="2">
+            <img src="assets/images/icons/hotel.svg" alt="">
+            Отели
+        </li>
+        <li class="tab-header__item tab-header__item--third js-tab-trigger reset-form-button" data-tab="3">
+            <img src="assets/images/icons/air.svg" alt="">
+            <img src="assets/images/icons/hotel.svg" alt="">
+            Авиабилеты+отели
+        </li>
+        </ul>
+        
+        <!--  Контейнер с блоками, которые содержат контент вкладок   -->
+        <ul class="tab-content">
+        <li class="tab-content__item js-tab-content active" data-tab="1">
+            <form action="" class="form__plane form">
+                <div class="form-check form-check-inline ps-0 form__radio">
+                    <input type="radio" name="triptype" id="triptype-1">
+                    <label class="radiolabel" for="triptype-1" style="margin-right: 2.25rem;">Туда и обратно</label>
+                    <input type="radio" name="triptype" id="triptype-2">
+                    <label class="radiolabel" for="triptype-2">В одну сторону</label>
+                </div>
+                <div class="form-line mb-4 justify-content-between">
+
+                    <div class=" form-block form-block-field">
+                        <label class="citylabel" for="">Город вылета</label>
+                        <div class="field-block">
+                            <input type="text" name="locationDeparture" id="twidget-origin1" class="dropdown-toggel sity-1" placeholder="Москва" autocomplete="off" required="">
+                        </div>
+                    </div> 
+                    <div class=" form-block form-block-field">
+                        <label class="citylabel" for="">Город прилета</label>
+                        <div class="field-block">
+                            <input type="text" name="locationDeparture" id="twidget-origin1" class="dropdown-toggel sity-1" placeholder="Москва" autocomplete="off" required="">
+                        </div>
+                    </div> 
+
+                </div>
+
+                <div class="form-line d-flex  justify-content-between form-line--second">
+                    <div class="form-col d-flex form-col--date">
+                        <div class="form-block form-block-field d-flex flex-column form-block__datapicker" style="margin-right:1.33333rem;">
+                            <label for="">Дата заезда</label>
+                            <div class="field-block calendarafter">
+                                <input type='text' class="datepicker-here dateinput" name="arrivaldate" id="arrivaldate" data-position="right top" placeholder="21.12.2021">
+                            </div>
+                        </div>
+                        <div class="form-block form-block-field d-flex flex-column">
+                            <label for="">Дата заезда</label>
+                            <div class="field-block calendarafter">
+                                <input type='text' class="datepicker-here dateinput" name="arrivaldate" id="arrivaldate" data-position="right top" placeholder="21.12.2021">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-col d-flex justify-content-between form-col--cnt">
+
+                        <div class="form-block form-block-field d-flex flex-column form-block--cnt">
+                            <label class="mb-4" for="">Кол-во взрослых (12+)</label>
+                            <div class="number">
+                                <span class="minus"></span>
+                                <input class="cntinput" type="text" value="1"/>
+                                <span class="plus"></span>
+                            </div>
+                        </div>
+                        <div class="form-block form-block-field d-flex flex-column justify-content-between ">
+                            <label class="mb-4" for="">Кол-во детей</label>
+                            <div class="number">
+                                
+                                <span class="minus"></span>
+                                <input class="cntinput" type="text" value="1"/>
+                                <span class="plus"></span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="btn__holder d-flex justify-content-center">
+                    <button type="submit" class="btn btn-block">Забронировать</button>
+                </div>
+
+            </form>
+        </li>
+        <li class="tab-content__item js-tab-content" data-tab="2">
+            <form action="" class="form">
+                <div class="form-line mb-4 justify-content-between">
+
+                    <div class=" form-block form-block-field">
+                        <label class="citylabel mt-0" for="">Город вылета</label>
+                        <div class="field-block">
+                            <input type="text" name="locationDeparture" id="twidget-origin1" class="dropdown-toggel sity-1" placeholder="Москва" autocomplete="off" required="">
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="form-line d-flex justify-content-between">
+                    <div class="form-col d-flex">
+                        <div class="form-block form-block-field d-flex flex-column" style="margin-right:1.33333rem;">
+                            <label for="">Дата заезда</label>
+                            <div class="field-block calendarafter">
+                                <input type='text' class="datepicker-here dateinput" name="arrivaldate" id="arrivaldate" data-position="right top" placeholder="21.12.2021">
+                            </div>
+                        </div>
+                        <div class="form-block form-block-field d-flex flex-column">
+                            <label for="">Дата заезда</label>
+                            <div class="field-block calendarafter">
+                                <input type='text' class="datepicker-here dateinput" name="arrivaldate" id="arrivaldate" data-position="right top" placeholder="21.12.2021">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-col d-flex justify-content-between form-col--cnt">
+
+                        <div class="form-block form-block-field d-flex flex-column form-block--cnt">
+                            <label class="mb-4" for="">Кол-во взрослых (12+)</label>
+                            <div class="number">
+                                <span class="minus"></span>
+                                <input class="cntinput" type="text" value="1"/>
+                                <span class="plus"></span>
+                            </div>
+                        </div>
+                        <div class="form-block form-block-field d-flex flex-column justify-content-between ">
+                            <label class="mb-4" for="">Кол-во детей</label>
+                            <div class="number">
+                                
+                                <span class="minus"></span>
+                                <input class="cntinput" type="text" value="1"/>
+                                <span class="plus"></span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="btn__holder d-flex justify-content-center">
+                    <button type="submit" class="btn btn-block">Забронировать</button>
+                </div>
+            </form>
+        </li>
+        <li class="tab-content__item js-tab-content" data-tab="3">
+            <form action="" class="form__plane form">
+                <div class="form-check form-check-inline ps-0">
+                    <input checked type="radio" name="triptype" id="triptype-1">
+                    <label class="radiolabel" for="triptype-1" style="margin-right: 2.25rem;">Туда и обратно</label>
+                </div>
+                <div class="form-line mb-4 justify-content-between">
+
+                    <div class=" form-block form-block-field">
+                        <label class="citylabel" for="">Город вылета</label>
+                        <div class="field-block">
+                            <input type="text" name="locationDeparture" id="twidget-origin1" class="dropdown-toggel sity-1" placeholder="Москва" autocomplete="off" required="">
+                        </div>
+                    </div> 
+                    <div class=" form-block form-block-field">
+                        <label class="citylabel" for="">Город прилета</label>
+                        <div class="field-block">
+                            <input type="text" name="locationDeparture" id="twidget-origin1" class="dropdown-toggel sity-1" placeholder="Москва" autocomplete="off" required="">
+                        </div>
+                    </div> 
+
+                </div>
+
+                <div class="form-line d-flex justify-content-between">
+                    <div class="form-col d-flex">
+                        <div class="form-block form-block-field d-flex flex-column" style="margin-right:1.33333rem;">
+                            <label for="">Дата заезда</label>
+                            <div class="field-block calendarafter">
+                                <input type='text' class="datepicker-here dateinput" name="arrivaldate" id="arrivaldate" data-position="right top" placeholder="21.12.2021">
+                            </div>
+                        </div>
+                        <div class="form-block form-block-field d-flex flex-column">
+                            <label for="">Дата заезда</label>
+                            <div class="field-block calendarafter">
+                                <input type='text' class="datepicker-here dateinput" name="arrivaldate" id="arrivaldate" data-position="right top" placeholder="21.12.2021">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-col d-flex justify-content-between form-col--cnt">
+
+                        <div class="form-block form-block-field d-flex flex-column form-block--cnt">
+                            <label class="mb-4" for="">Кол-во взрослых (12+)</label>
+                            <div class="number">
+                                <span class="minus"></span>
+                                <input class="cntinput" type="text" value="1"/>
+                                <span class="plus"></span>
+                            </div>
+                        </div>
+                        <div class="form-block form-block-field d-flex flex-column justify-content-between ">
+                            <label class="mb-4" for="">Кол-во детей</label>
+                            <div class="number">
+                                
+                                <span class="minus"></span>
+                                <input class="cntinput" type="text" value="1"/>
+                                <span class="plus"></span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="btn__holder d-flex justify-content-center">
+                    <button type="submit" class="btn btn-block">Забронировать</button>
+                </div>
+
+            </form>
+        </li>
+        </ul>
+    </div>
+
+    <script src="assets/js/jq.js"></script>
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/datepicker.js"></script>
+    <script src="assets/js/formCounter.js"></script>
+    <script>
+        $(".reset-form-button").click(function() {
+
+            $("form")[0].reset();
+            $("form")[1].reset();
+            $("form")[2].reset();
+
+        });
+    </script>
+
+</body>
+</html>
