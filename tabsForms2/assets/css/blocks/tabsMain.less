@@ -1,0 +1,91 @@
+// main: ../style.less
+
+ 
+.tabs {
+    width: 100%;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+ 
+ /* Стили для списка вкладок */
+.tab-header {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+ 
+ /* Стили для вкладки */
+.tab-header__item {
+    padding: 13px 30px 14px 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    height: 50px;
+
+
+    &--first {
+
+        background:#00a99d;
+
+    }
+
+    &--second {
+
+        background:#1cbbb4;
+
+    }
+
+    &--third {
+
+        background: #2dd1c9;
+
+    }
+
+    img {
+
+        margin-right: 20px;
+
+    }
+
+}
+ 
+ /* Стили для активной вкладки */
+.tab-header__item.active {
+    position: relative;
+    background: #fafafa;   
+    color:#1cbbb4;
+
+
+}
+ 
+ /* Стиль для списка контейнеров с содержимым вкладок */
+.tab-content {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+ 
+ /* Стили для контейнера с содержимым вкладки */
+.tab-content__item {
+    display: none;
+    padding: 40px 70px 45px 40px;
+    background: #F4F6FB;
+}
+ 
+ /* Стили для активного контейнера вкладки */
+.tab-content__item.active {
+    display: block;
+}
+ 

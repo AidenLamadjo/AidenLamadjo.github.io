@@ -1,0 +1,5 @@
+<svg width="34" height="22" viewBox="0 0 34 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="34" height="22" rx="6" fill="white"/>
+<rect x="11" y="10" width="12" height="2" fill="#CCD2DB"/>
+<rect x="18" y="5" width="12" height="2" transform="rotate(90 18 5)" fill="#CCD2DB"/>
+</svg>

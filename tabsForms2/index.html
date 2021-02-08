@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="front_tabs">
+        <div class="container">
+            <div class="tabs_wrapper">
+                <!-- Общий контейнер для табов -->
+                <div class="tabs">
+                    <!--  Контейнер с вкладками   -->
+                    <ul class="tab-header">
+                        <li class="tab-header__item js-tab-trigger tab-header__item--first active" data-tab="1">
+                            <img src="assets/images/icons/air.svg" alt="">
+                            Авиабилеты
+                        </li>
+                        <li class="tab-header__item js-tab-trigger tab-header__item--second" data-tab="2">
+                            <img src="assets/images/icons/hotel.svg" alt="">
+                            Отели
+                        </li>
+                        <li class="tab-header__item js-tab-trigger tab-header__item--third" data-tab="3">
+                            <img src="assets/images/icons/air.svg" alt="">
+                            <img src="assets/images/icons/hotel.svg" alt="">
+                            Авиабилеты + отели
+                        </li>
+                    </ul>
+                    
+                    <!--  Контейнер с блоками, которые содержат контент вкладок   -->
+                    <ul class="tab-content">
+                        <li class="tab-content__item js-tab-content active" data-tab="1">
+                            <form action="">
+                                <div class="row">
+                                    <div class="col-sm-4 col-lg-2">
+                                        <label class="citylabel" for="">Город вылета</label>
+                                        <div class="field-block">
+                                            <input type="text" name="locationDeparture" id="twidget-origin1" class="dropdown-toggel sity-1" placeholder="Москва" autocomplete="off" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 col-lg-2">
+                                        <label class="citylabel" for="">Город прилета</label>
+                                        <div class="field-block">
+                                            <input type="text" name="locationDeparture" id="twidget-origin2" class="dropdown-toggel sity-2" placeholder="Москва" autocomplete="off" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 col-lg-2">
+                                        <label for="">Дата заезда</label>
+                                        <div class="field-block calendarafter">
+                                            <input type='text' class="datepicker-here dateinput" name="arrivaldate" id="arrivaldate" data-position="bottom left" placeholder="21.12.2021" autocomplete="OFF">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 col-lg-2">
+                                        <div id="hide" class="form-block form-block-field d-flex flex-column form-block-arrivaldate">
+                                            <label for="">Дата выезда</label>
+                                            <div class="field-block calendarafter">
+                                                <input type='text' class="datepicker-here dateinput" name="arrivaldate" id="arrivaldate" data-position="bottom left" placeholder="21.12.2021" autocomplete="OFF">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 col-lg-1 d-flex flex-column ">
+                                        <label class="cnt-label" for="">Взрослых</label>
+                                        <select class="cntinput" name="" id="">
+                                            <option value="">0</option>
+                                            <option value="">1</option>
+                                            <option value="">2</option>
+                                            <option value="">3</option>
+                                            <option value="">4</option>
+                                            <option value="">5</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-4 col-lg-1 d-flex flex-column ">
+                                        <label class="cnt-label" for="">Детей</label>
+                                        <select class="cntinput" name="" id="">
+                                            <option value="">0</option>
+                                            <option value="">1</option>
+                                            <option value="">2</option>
+                                            <option value="">3</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-4 col-lg-2 d-flex flex-column justify-content-end">
+                                        <button type="submit" class="btn btn-block">Забронировать</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </li>
+                        <li class="tab-content__item js-tab-content" data-tab="2">
+                            <form action="">
+                                <div class="row">
+                                    <div class="col-sm-4 col-lg-2">
+                                        <label class="citylabel" for="">Город вылета</label>
+                                        <div class="field-block">
+                                            <input type="text" name="locationDeparture" id="twidget-origin1" class="dropdown-toggel sity-1" placeholder="Москва" autocomplete="off" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 col-lg-2">
+                                        <label class="citylabel" for="">Город прилета</label>
+                                        <div class="field-block">
+                                            <input type="text" name="locationDeparture" id="twidget-origin2" class="dropdown-toggel sity-2" placeholder="Москва" autocomplete="off" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 col-lg-2">
+                                        <label for="">Дата заезда</label>
+                                        <div class="field-block calendarafter">
+                                            <input type='text' class="datepicker-here dateinput" name="arrivaldate" id="arrivaldate" data-position="bottom left" placeholder="21.12.2021" autocomplete="OFF">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 col-lg-2">
+                                        <div id="hide" class="form-block form-block-field d-flex flex-column form-block-arrivaldate">
+                                            <label for="">Дата выезда</label>
+                                            <div class="field-block calendarafter">
+                                                <input type='text' class="datepicker-here dateinput" name="arrivaldate" id="arrivaldate" data-position="bottom left" placeholder="21.12.2021" autocomplete="OFF">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 col-lg-1 d-flex flex-column ">
+                                        <label class="cnt-label" for="">Взрослых</label>
+                                        <select class="cntinput" name="" id="">
+                                            <option value="">0</option>
+                                            <option value="">1</option>
+                                            <option value="">2</option>
+                                            <option value="">3</option>
+                                            <option value="">4</option>
+                                            <option value="">5</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-4 col-lg-1 d-flex flex-column ">
+                                        <label class="cnt-label" for="">Детей</label>
+                                        <select class="cntinput" name="" id="">
+                                            <option value="">0</option>
+                                            <option value="">1</option>
+                                            <option value="">2</option>
+                                            <option value="">3</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-4 col-lg-2 d-flex flex-column justify-content-end">
+                                        <button type="submit" class="btn btn-block">Забронировать</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </li>
+                        <li class="tab-content__item js-tab-content" data-tab="3">
+                            <form action="">
+                                <div class="row">
+                                    <div class="col-sm-4 col-lg-2">
+                                        <label class="citylabel" for="">Город вылета</label>
+                                        <div class="field-block">
+                                            <input type="text" name="locationDeparture" id="twidget-origin1" class="dropdown-toggel sity-1" placeholder="Москва" autocomplete="off" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 col-lg-2">
+                                        <label class="citylabel" for="">Город прилета</label>
+                                        <div class="field-block">
+                                            <input type="text" name="locationDeparture" id="twidget-origin2" class="dropdown-toggel sity-2" placeholder="Москва" autocomplete="off" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 col-lg-2">
+                                        <label for="">Дата заезда</label>
+                                        <div class="field-block calendarafter">
+                                            <input type='text' class="datepicker-here dateinput" name="arrivaldate" id="arrivaldate" data-position="bottom left" placeholder="21.12.2021" autocomplete="OFF">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 col-lg-2">
+                                        <div id="hide" class="form-block form-block-field d-flex flex-column form-block-arrivaldate">
+                                            <label for="">Дата выезда</label>
+                                            <div class="field-block calendarafter">
+                                                <input type='text' class="datepicker-here dateinput" name="arrivaldate" id="arrivaldate" data-position="bottom left" placeholder="21.12.2021" autocomplete="OFF">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 col-lg-1 d-flex flex-column ">
+                                        <label class="cnt-label" for="">Взрослых</label>
+                                        <select class="adultcnt cntinput" name="" id="">
+                                            <option value="">0</option>
+                                            <option value="">1</option>
+                                            <option value="">2</option>
+                                            <option value="">3</option>
+                                            <option value="">4</option>
+                                            <option value="">5</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-4 col-lg-1 d-flex flex-column">
+                                        <label class="cnt-label" for="">Детей</label>
+                                        <select class="childcnt cntinput select2 select select3 select2-hidden-accessible" name="" id="">
+                                            <option value="">0</option>
+                                            <option value="">1</option>
+                                            <option value="">2</option>
+                                            <option value="">3</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-4 col-lg-2 d-flex flex-column justify-content-end">
+                                        <button type="submit" class="btn btn-block">Забронировать</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/jq.js"></script>
+    <script src="assets/js/tabs.js"></script>
+
+</body>
+</html>
