@@ -1,0 +1,105 @@
+// main: ../style.less
+
+.registration {
+
+    padding-top: 250px;
+
+}
+
+.registration__title {
+
+    font-weight: 700;
+    font-size: 3rem;
+    color: @dark;
+
+}
+
+.registration__subtitle {
+
+    font-weight: 400;
+    font-size: 1.375rem;
+    color: @dark;
+
+}
+
+input[type=radio] {
+
+    display: none;
+
+}
+
+.radiolabel {
+
+    display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 25px;
+	margin-right: 0;
+	line-height: 18px;
+    user-select: none;
+    
+    &::before {
+
+        content: "";
+        display: inline-block;
+        width: 17px;
+        height: 18px;
+        position: absolute;
+        left: 0;
+        bottom: 1px;
+
+    }
+
+}
+
+input[type=radio]:checked + .radiolabel:before {
+
+    background: url(../images/icons/radioinput_checked.svg) 0 0 no-repeat;
+
+}
+
+input[type=radio]:not(:checked) + .radiolabel:before {
+
+    background: url(../images/icons/radioinput_unchecked.svg) 0 0 no-repeat;
+
+}
+
+label {
+
+    font-weight: 400;
+    font-size: 1.066666rem;
+    line-height: 1.3333333rem;
+    color: @dark;
+    margin-bottom: 1rem;
+
+}
+
+.registration__form {
+
+    padding: 40px 57px 50px 57px;
+    background: #F4F6FB;
+    max-width: 800px;
+    border-radius: 10px;
+
+}
+
+.form__title {
+
+    font-weight: 700;
+    font-size: 1.375rem;
+    line-height: 2rem;
+    margin-bottom: 40px;
+    color: @dark;
+
+}
+
+.dropdown-toggel {
+
+    width: 312px;
+    height: 44px;
+    background: @white;
+    border: 1px solid @gray;
+    border-radius: 6px;
+    padding: 12px 20px;
+
+}
