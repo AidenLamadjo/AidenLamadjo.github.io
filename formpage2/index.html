@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container">
+            <div class="header__inner pt-3 pb-3 d-flex justify-content-between align-items-center">
+                <div class="header__logo">
+                    <img src="assets/images/logo.svg" alt="logo" class="header__logo-img">
+                </div>
+                <nav class="header__nav d-flex">
+                    <a href="" class="nav__link">Тариф</a>
+                    <a href="" class="nav__link ms-5">Страховка</a>
+                    <a href="" class="nav__link ms-5">Новости</a>
+                    <a href="" class="nav__link ms-5">Отзывы</a>
+                    <a href="" class="nav__link ms-5">Вопрос-ответ</a>
+                    <a href="" class="nav__link ms-5 nav__link--phone">8 (495) 128-92-58</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="intro">
+        <div class="container">
+            <div class="intro__inner d-flex flex-column align-items-center">
+                <div class="intro__title">Быстрое оформление</div>
+                <div class="intro__text">Забронируй все в одном месте</div>
+            </div>
+            <div class="intro__ticket">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-6 ticket__departure">
+                        <div class="ticket__label">Город вылета</div>
+                        <div class="ticket__city">Париж</div>
+                    </div>
+                    <div class="col-6 ticket__arrival">
+                        <div class="ticket__label text-end">Город прилета</div>
+                        <div class="ticket__city text-end">Калининград</div>
+                    </div>
+                </div>
+                <div class="ticket__line"></div>
+                <div class="row d-flex justify-content-between">
+                    <div class="col-6 ticket__departure">
+                        <div class="ticket__label">Дата заезда</div>
+                        <div class="ticket__date">21.10.2020</div>
+                    </div>
+                    <div class="col-6 ticket__arrival">
+                        <div class="ticket__label text-end">Дата выезда</div>
+                        <div class="ticket__date text-end">19.11.2020</div>
+                    </div>
+                </div>
+                <div class="btn__holder d-flex justify-content-center">
+                    <a href="" class="btn btn-block ticket__btn">Изменить</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="registration">
+        <div class="container">
+            <div class="registration__title mb-2">Данные пассажира(-ов)</div>
+            <div class="registration__subtitle mb-5">Важно! Данные вводить латиницей, как в загранпаспорте</div>
+            <form class="registration__form" action="">
+                <div class="passenger-form passenger-form--adult mb-2rem">
+                    <div class="form__title">1-й пассажир, взрослый</div>
+                    <div class="row mb-2rem">
+                        <div class="col-4">
+                            <label for="">Выберите пол</label>
+                            <div class="form-check form-check-inline ps-0 form__radio d-flex">
+                                <input class="radio_option" type="radio" name="sex" id="sex-1" checked>
+                                <label class="radiolabel" for="sex-1" style="margin-right: 2.25rem;">Мужской</label>
+                                <input class="radio_option" type="radio" name="sex" id="sex-2">
+                                <label class="radiolabel" for="sex-2">Женский</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-between mb-2rem">
+                        <div class="col-6">
+                            <label class="citylabel" for="">Фамилия</label>
+                            <div class="field-block">
+                                <input type="text" name="lastName" id="" class="dropdown-toggel fam" required="">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <label class="citylabel" for="">Имя</label>
+                            <div class="field-block">
+                                <input type="text" name="firstName" id="" class="dropdown-toggel name" required="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="passenger-form passenger-form--child mb-2rem">
+                    <div class="form__title">2-й пассажир, ребенок</div>
+                    <div class="row mb-2rem">
+                        <div class="col-4">
+                            <label for="">Выберите пол</label>
+                            <div class="form-check form-check-inline ps-0 form__radio d-flex">
+                                <input class="radio_option" type="radio" name="sex2" id="sex-3" checked>
+                                <label class="radiolabel" for="sex-3" style="margin-right: 2.25rem;">Мужской</label>
+                                <input class="radio_option" type="radio" name="sex2" id="sex-4">
+                                <label class="radiolabel" for="sex-4">Женский</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-between mb-2rem">
+                        <div class="col-6">
+                            <label class="citylabel" for="">Фамилия</label>
+                            <div class="field-block">
+                                <input type="text" name="lastName" id="" class="dropdown-toggel fam" required="">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <label class="citylabel" for="">Имя</label>
+                            <div class="field-block">
+                                <input type="text" name="firstName" id="" class="dropdown-toggel name" required="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="registration__contacts">
+                    <div class="registration__title">Контактные данные</div>
+                    <div class="contacts__info">
+                        Пришлем на электронную почту билет<br>
+                        и оповестим в случае изменений по заказу
+                    </div>
+                    <div class="contacts__wrapper d-flex justify-content-between">
+                        <div class="col-6">
+                            <label class="label" for="">Email</label>
+                            <div class="field-block">
+                                <input type="email" name="email" id="" class="dropdown-toggel email" required="">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <label class="label" for="">Телефон</label>
+                            <div class="field-block">
+                                <input id="phone" class="dropdown-toggel phone" name="phone" type="tel">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="additionalServices mb-5">
+                    <div class="registration__title">Дополнительные услуги</div>
+                    <div class="row d-flex flex-column mb-2rem">
+                        <div class="services__wrapper d-flex">
+                            <div class="col-9">
+                                <label for="" class="service__label">Забронировать отель</label>
+                                <ul class="advantages">
+                                    <li>Подойдет для получения визы любой страны</li>
+                                    <li>Подойдет для прохождения пограничного контроля в аэропорту</li>
+                                </ul>
+                            </div>
+                            <div class="col-3 d-flex flex-column align-items-end">
+                                <div>
+                                    <label class="service__label service__label--switch"  for="">200р</label>
+                                    <input id="s1d" type="checkbox" class="switch">
+                                </div>
+                                <div class="service__info">Забронировать для всех</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row d-flex flex-column">
+                        <div class="services__wrapper d-flex">
+                            <div class="col-9">
+                                <label for="" class="service__label">Оформить страховку</label>
+                                <ul class="advantages">
+                                    <li>Подойдет для получения визы</li>
+                                    <li>Подойдет для путешествий по всему миру</li>
+                                    <li>Более 15 страховых компаний</li>
+                                    <li>Самые низкие цены</li>
+                                </ul>
+                            </div>
+                            <div class="col-3 d-flex flex-column align-items-end">
+                                <div>
+                                    <label class="service__label service__label--switch"  for="">200р</label>
+                                    <input id="s1d" type="checkbox" class="switch">
+                                </div>
+                                <div class="service__info">Застраховать всех</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="conditions mb-4">
+                    <div class="registration__title mb-4">Условия тарифа</div>
+                    <div class="handluggage"><span class="font-weight-bold" >Ручная кладь:</span> 1 место до 8 кг</div>
+                    <div class="luggage"><span class="font-weight-bold" >Багаж:</span> оплачивается отдельно</div>
+                </div>
+
+                <div class="agreement d-flex align-items-start mb-5">
+                    <input class="agreement-checkbox" type="checkbox" name="agreement" id="agreement-checkbox">
+                    <label class="agreement__label" for="agreement-checkbox">Я прочитал(а) и соглашаюсь с условиями<br> тарифа и обработкой персональных данных</label>
+                </div>
+
+                <div class="btn__holder">
+                    <button type="submit" class="btn btn-block">Бронировать и перейти к оплате</button>
+                </div>
+
+
+
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner row d-flex justify-content-between">
+                <div class="footer__logo col-3">
+                    <img src="assets/images/footer-logo.svg" alt="">
+                </div>
+
+                    <div class="col-2 footer-nav__col">
+                        <div class="footer__nav-title">Клиентам</div>
+                        <a class="footer__nav-link">Тариф</a>
+                        <a class="footer__nav-link">Вопрос-ответ</a>
+                        <a class="footer__nav-link">Оставить отзыв</a>
+                        <a class="footer__nav-link">Договор-оферта</a>
+                    </div>
+                    <div class="col-2 footer-nav__col">
+                        <div class="footer__nav-title">Компания</div>
+                        <a class="footer__nav-link">О нас</a>
+                        <a class="footer__nav-link">Новости</a>
+                        <a class="footer__nav-link">Политика безопасности</a>
+                        <a class="footer__nav-link">Обработка<br> персональных данных</a>
+                        <a class="footer__nav-link">Вакансии</a>
+                    </div>
+                    <div class="col-2 footer-nav__col">
+                        <div class="footer__nav-title">Для парнеров</div>
+                        <a class="footer__nav-link">Сотрудничество</a>
+                    </div>
+                    <div class="col-2">
+                        <div class="footer__nav-title">Контакты</div>
+                        <a type="email:info@kupitrip" class="footer__nav-link footer__nav-link--email">info@kupitrip</a>
+                        <div class="emailcontact-label">Отдел бронирвоания</div>
+                        <div class="footer__contacts-item">Пн. - Вс.<br>с 9.00 до 19.00</div>
+                        <a type="tel:84951289258" class="footer__nav-link">8 495 128 92 58</a>
+                        <div class="footer__contacts-media d-flex">
+                            <a class="media__item me-2">
+                                <img src="assets/images/icons/tg.svg" alt="">
+                            </a>
+                            <a class="media__item me-2">
+                                <img src="assets/images/icons/inst.svg" alt="">
+                            </a>
+                            <a class="media__item">
+                                <img src="assets/images/icons/vk.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+            </div>
+            <div class="mt-4 mb-5 d-flex flex-column align-items-center">
+                <div>Мы принимаем</div>
+                <img src="assets/images/icons/pay.svg" alt="">
+            </div>
+        </div>
+        <div class="cop d-flex flex-column align-items-center">
+            <div>© “КУПИТРИП” онлайн-сервис готовых документов для визы<br>
+                2014-2020</div>
+        </div>
+    </footer>
+
+    <script src="assets/js/jq.js"></script>
+    <script src="assets/js/datepicker.js"></script>
+    <script src="assets/js/telInput/intlTelInput.js"></script>
+    <script>
+        var input = document.querySelector("#phone");
+        window.intlTelInput(input, {
+          // allowDropdown: false,
+          // autoHideDialCode: false,
+          // autoPlaceholder: "off",
+          // dropdownContainer: document.body,
+          // excludeCountries: ["us"],
+          // formatOnDisplay: false,
+          // geoIpLookup: function(callback) {
+          //   $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+          //     var countryCode = (resp && resp.country) ? resp.country : "";
+          //     callback(countryCode);
+          //   });
+          // },
+          // hiddenInput: "full_number",
+          // initialCountry: "auto",
+          // localizedCountries: { 'de': 'Deutschland' },
+          // nationalMode: false,
+          // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+          // placeholderNumberType: "MOBILE",
+          // preferredCountries: ['cn', 'jp'],
+          // separateDialCode: true,
+          utilsScript: "assets/js/telInput/utils.js",
+        });
+      </script>
+
+</body>
+</html>
