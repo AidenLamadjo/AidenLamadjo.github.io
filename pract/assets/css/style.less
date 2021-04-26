@@ -1,0 +1,79 @@
+// compress: true
+
+
+html {
+    font-size: 15px;
+}
+
+@font-face {
+    font-family: 'Gotham Pro Light';
+    src: url('../fonts/GothamPro-Light.eot');
+    src: url('../fonts/GothamPro-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/GothamPro-Light.woff') format('woff'),
+    url('../fonts/GothamPro-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Pro Medium';
+    src: url('../fonts/GothamPro-Medium.eot');
+    src: url('../fonts/GothamPro-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/GothamPro-Medium.woff') format('woff'),
+    url('../fonts/GothamPro-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Pro Bold';
+    src: url('../fonts/GothamPro-Bold.eot');
+    src: url('../fonts/GothamPro-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/GothamPro-Bold.woff') format('woff'),
+    url('../fonts/GothamPro-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    
+    margin: 0;
+    font-family: 'Gotham Pro', 'sans-serif';
+    font-size: 1rem;
+
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
+.app {display: none;}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+// BLOCKS
+
+@import "blocks/preload";
+@import "blocks/header";
+@import "blocks/forJS";
+@import "blocks/something";
+@import "blocks/section0";
+@import "blocks/section1";
+@import "blocks/worksSlider";
+@import "blocks/reviews";
+@import "blocks/reviewsSlider";
+@import "blocks/section4";
+
+
+
+@import "blocks/mobile/preload" (max-width:768px);
+@import "blocks/mobile/header" (max-width:768px);
+@import "blocks/mobile/hamburgerMenu" (max-width:768px);
+@import "blocks/mobile/intro" (max-width:768px);
+@import "blocks/mobile/cats" (max-width:768px);
+@import "blocks/mobile/reviews" (max-width:768px);
+@import "blocks/mobile/form" (max-width:768px);
