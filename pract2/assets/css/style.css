@@ -1,0 +1,300 @@
+html {
+  font-size: 16px;
+}
+@font-face {
+  font-family: 'Gotham Pro Light';
+  src: url('../fonts/GothamPro-Light.eot');
+  src: url('../fonts/GothamPro-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamPro-Light.woff') format('woff'), url('../fonts/GothamPro-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gotham Pro Regular';
+  src: url('../fonts/GothamPro.eot');
+  src: url('../fonts/GothamPro.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamPro.woff') format('woff'), url('../fonts/GothamPro.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gotham Pro Medium';
+  src: url('../fonts/GothamPro-Medium.eot');
+  src: url('../fonts/GothamPro-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamPro-Medium.woff') format('woff'), url('../fonts/GothamPro-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gotham Pro Bold';
+  src: url('../fonts/GothamPro-Bold.eot');
+  src: url('../fonts/GothamPro-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamPro-Bold.woff') format('woff'), url('../fonts/GothamPro-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  margin: 0;
+  font-family: 'Gotham Pro', 'sans-serif';
+  font-size: 1rem;
+}
+img {
+  display: inline;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+.app {
+  display: none;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+.header {
+  padding: 1.2rem 0;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__container {
+  max-width: 1800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+nav {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.nav__link {
+  margin-left: 2rem;
+  text-decoration: none;
+  font-size: 0.93rem;
+  color: #222222;
+  font-weight: 700;
+  position: relative;
+}
+.nav__link:after {
+  content: "";
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0px;
+  background-color: #222222;
+  position: absolute;
+  z-index: 1;
+  transition: width 0.2s linear;
+}
+.nav__link:hover:not(.nav__link--btn):after {
+  width: 100%;
+}
+.nav__link--btn {
+  padding: 0.66rem 2rem;
+  border: 2px solid #222222;
+  border-radius: 20px;
+  margin-left: 2rem;
+  text-decoration: none;
+  color: #222222;
+  font-weight: 700;
+  transition: background 0.2s linear, color 0.2s linear;
+}
+.nav__link--btn:hover {
+  background: #222222;
+  color: #fff;
+}
+.fullBody {
+  display: flex;
+}
+.navSidebar__nav {
+  display: flex;
+  flex-direction: column;
+  margin-top: 147px;
+}
+.navSidebar__nav .nav__link {
+  color: #2C2C2C;
+  font-size: 1rem;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0 37px;
+}
+.navSidebar__nav .nav__link::after {
+  display: none;
+}
+.navSidebar__nav .nav__link--home::before {
+  content: "";
+  display: inline-block;
+  background: url(../img/home.svg);
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.navSidebar__nav .nav__link--forum::before {
+  content: "";
+  display: inline-block;
+  background: url(../img/forum-white.svg);
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.navSidebar__nav .nav__link--discord::before {
+  content: "";
+  display: inline-block;
+  background: url(../img/discord.svg);
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.navSidebar__nav .nav__link--vk::before {
+  content: "";
+  display: inline-block;
+  background: url(../img/vk.svg);
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.navSidebar__nav .nav__link--active {
+  background: linear-gradient(270deg, #595959 0%, #2B2B2B 100%);
+  color: #fff;
+}
+.main {
+  display: flex;
+  padding-left: 40px;
+  padding-top: 50px;
+  padding: 50px 40px 0 40px;
+  width: 100%;
+  justify-content: space-between;
+}
+.main__content {
+  width: 100%;
+}
+.main__title-value {
+  color: #222222;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 1.8rem;
+}
+.section__mainTitle {
+  color: #222222;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.section__subTitle {
+  color: #222222;
+  font-size: 0.8rem;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+.forumsBlock {
+  border: 1px solid #E0E0E0;
+  width: 100%;
+  border-radius: 6px;
+  padding: 0 1rem;
+}
+.forums__info {
+  display: flex;
+}
+.forums__info img {
+  margin-top: 5px;
+  margin-right: 1rem;
+}
+.forums__title {
+  color: #222222;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+.forums__subtitle {
+  color: #222222;
+  font-size: 0.75rem;
+  font-weight: 300;
+}
+.forums__item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #E0E0E0;
+  padding: 1rem 0;
+}
+.forums__item--last {
+  border: none;
+}
+.forums__stat {
+  display: flex;
+}
+.themsStat {
+  padding-right: 13px;
+  border-right: 1px solid #E0E0E0;
+}
+.messagesStat {
+  padding-left: 13px;
+}
+.themsStat__img,
+.messagesStat__img {
+  margin-bottom: 13px;
+  padding: 4px 22px;
+  background: #EEEEEE;
+  border-radius: 30px;
+}
+.themsStat__count,
+.messagesStat__count {
+  text-align: center;
+}
+.mainSidebar {
+  padding: 20px;
+  width: 340px;
+  box-shadow: 0px 2px 5px rgba(66, 66, 66, 0.21);
+  border-radius: 6px;
+  margin-left: 35px;
+}
+.mainSidebar__title {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #E0E0E0;
+  margin-bottom: 1rem;
+}
+.mainSidebar__title-value {
+  font-size: 0.875rem;
+  color: #9E9E9E;
+  font-weight: 500;
+}
+.mainSidebar__title-value::before {
+  content: "";
+  display: inline-block;
+  background: url(../img/forum-sm.svg);
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  margin-bottom: -5px;
+}
+.lastMessages__item {
+  display: flex;
+}
+.img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #C4C4C4;
+  margin-right: 10px;
+}
+.lastMessage__title {
+  color: #222222;
+  font-size: 0.875rem;
+  font-weight: 300;
+}
+.lastMessage__user {
+  color: #9E9E9E;
+  font-size: 0.8125rem;
+  font-weight: 300;
+}
+.lastMessage__date,
+.lastMessage__forumTitle {
+  color: #222222;
+  font-size: 0.8125rem;
+  font-weight: 300;
+}

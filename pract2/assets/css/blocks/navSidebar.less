@@ -1,0 +1,86 @@
+// main: ../style.less
+
+.fullBody {
+
+    display: flex;
+
+}
+
+
+
+.navSidebar__nav {
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 147px;
+
+    .nav__link {
+
+        color: #2C2C2C;
+        font-size: 1rem;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0 37px;
+
+        &::after {
+
+            display: none;
+
+        }
+
+        &--home::before {
+
+            content: "";
+            display: inline-block;
+            background: url(../img/home.svg);
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+
+        }
+
+        &--forum::before {
+
+            content: "";
+            display: inline-block;
+            background: url(../img/forum-white.svg);
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+
+        }
+
+        &--discord::before {
+
+            content: "";
+            display: inline-block;
+            background: url(../img/discord.svg);
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+
+        }
+
+        &--vk::before {
+
+            content: "";
+            display: inline-block;
+            background: url(../img/vk.svg);
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+
+        }
+
+        &--active {
+
+            background: linear-gradient(270deg, #595959 0%, #2B2B2B 100%);
+            color: #fff;
+
+        }
+
+    }
+    
+}
