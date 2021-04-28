@@ -39,7 +39,7 @@
 			//Пишем в сессию логин и id пользователя (их мы берем из переменной $user!):
 			$_SESSION['id'] = $user['id']; 
 			$_SESSION['login'] = $user['login']; 
-            echo 'верно';
+			header("Location: ../../loged.html"); 
 		} else {
 			echo 'неверно';
 		}
